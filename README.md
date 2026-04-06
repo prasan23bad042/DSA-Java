@@ -1,63 +1,96 @@
-# 📘 DSA Java
+🧠 DSA Practice Problems
 
-A **Data Structures and Algorithms (DSA)** practice repository primarily written in **Java**, with a few **Python** and **C++** practice problems.  
-This repository is created for **learning, revision, and interview preparation**.
-
----
-
-## 🚀 Repository Highlights
-
-- Java implementations of core DSA problems
-- Graph algorithms (BFS, DFS, Topological Sort, Cycle Detection)
-- Binary Tree & Binary Search Tree (BST) problems
-- Dynamic Programming & Greedy algorithms
-- Mixed practice problems in Java, Python, and C++
-- Clean, readable, and interview-oriented solutions
+This repository contains my daily practice problems focused on improving problem-solving skills and coding efficiency.
 
 ---
 
-## 🛠️ Languages Used
+🎯 Purpose
 
-- **Java** (Main language)
-- **Python** (Practice problems)
-- **C++** (Few beginner problems)
+- Practice basic to advanced DSA problems
+- Improve logic building
+- Prepare for coding interviews
+- Strengthen concepts through consistent coding
 
 ---
 
-## 📂 Project Structure (Logical Grouping)
+📌 Problem Example
 
-```text
-DSA-Java/
-│
-├── Graph Algorithms
-│   ├── BFS / DFS
-│   ├── Cycle Detection (Directed & Undirected)
-│   ├── Topological Sort (Kahn’s Algorithm)
-│   ├── Flood Fill
-│   ├── Rotten Oranges
-│
-├── Tree & BST
-│   ├── Insert, Delete, Search in BST
-│   ├── Validate BST
-│   ├── LCA of BST
-│   ├── Kth Smallest Element
-│   ├── Predecessor & Successor
-│   ├── Recover BST
-│
-├── Dynamic Programming & Greedy
-│   ├── 0/1 Knapsack
-│   ├── Fractional Knapsack
-│   ├── Perfect Sum Problem
-│   ├── Minimum Platforms
-│
-├── Arrays & Math
-│   ├── Count Primes (Sieve of Eratosthenes)
-│   ├── Power Function (pow xⁿ)
-│   ├── Top K Frequent Elements
-│
-├── Practicing Problems
-│   ├── Java
-│   ├── Python
-│   └── C++
-│
-└── README.md
+🔹 Convert to Hexadecimal
+
+Difficulty: Easy
+
+Problem Statement:
+Given an integer "a", print its hexadecimal representation.
+
+---
+
+💡 Approach
+
+- Use built-in conversion ("hex" in C++ / Python)
+- Or manually convert using division by 16
+
+---
+
+✅ Sample Input
+
+26
+
+✅ Sample Output
+
+1a
+
+---
+
+💻 Solution (C++)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cin >> a;
+
+    cout << hex << a << endl;
+
+    return 0;
+}
+
+---
+
+🗂️ Topics Covered
+
+- Arrays
+- Strings
+- Math
+- Bit Manipulation
+- Basic I/O
+- Number Systems (Binary, Hexadecimal)
+
+---
+
+📅 Practice Strategy
+
+- Solve at least 2–3 problems daily
+- Focus on:
+  - Understanding logic
+  - Writing clean code
+  - Optimizing solutions
+
+---
+
+🚀 Goal
+
+To become strong in:
+
+- Problem-solving
+- Competitive programming
+- Technical interviews
+
+---
+
+✍️ Note
+
+This repository is only for practice and learning purposes.
+Mistakes are part of the process — consistency is key 💪
+
+---
