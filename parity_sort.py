@@ -1,28 +1,30 @@
 import sys
-input = sys.stdin.readline
-t = int(input())
-for _ in range(t):
-    n = int(input())
-    a = list(map(int,input().split()))
-    even = []
-    odd = []
-    for x in a:
-        if x % 2 == 0:
-            even.append(x)
+
+def solve():
+    input = sys.stdin.read().split()
+    if not input:
+        return
+    ptr = 0
+    t = int(input[ptr])
+    ptr += 1
+    results = []
+    for _ in range(t):
+        n = int(input[ptr])
+        ptr += 1
+        a = []
+        for i in range(n):
+            a.append(int(input[ptr]))
+            ptr += 1
+        sorted_a = sorted(a)
+        
+        possible = True
+        for i in range(n):
+            if a[i] % 2 != sorted_a[i] % 2:
+                possible = False
+                break
+        if possible:
+            results.append("YES")
         else:
-            odd.append(x)
-    even.sort()
-    odd.sort()
-    i = 0 
-    j = 0  
-    b = []
-    for x in a:
-        if x % 2 == 0:
-            b.append(even[i])
-            i += 1
-        else:
-            b.append(odd[j])
-    if b == sorted(a):
-        print("YES")
-    else:
-        print("NO")
+            results.append("NO")
+    sys.stdout.write("\n".join(results) + "\n")
+solve()
